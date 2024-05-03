@@ -9,7 +9,15 @@ const cors = require("cors");
 
 const { mongoUri, PORT } = require("./config");
 
+
+
 // 3. Import Routes:
+const studentRoutes = require('./routes/studentRoutes');
+const staffRoutes= require('./routes/staffRoutes');
+const courseRoutes= require('./routes/course');
+const departmentRoutes= require('./routes/dapartmentRoutes');
+
+
 
 
 
@@ -39,9 +47,10 @@ app.use(bodyParser.json())
 
 
 // 7. Set entry points for the REST routes created for the different Collections.
-app.get("/", (req, res) => {
-  res.send("hello cse-js-3");
-});
+app.use("/api/students", studentRoutes);
+app.use("/api/staff", staffRoutes);
+app.use("/api/course", courseRoutes);
+app.use("/api/department", departmentRoutes);
 
 
 // 8. Prepare for Production

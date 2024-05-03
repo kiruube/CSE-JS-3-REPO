@@ -19,7 +19,7 @@ const CourseSchema = new Schema({
         required: true,
     },
     category:{
-        type: Enum,
+        type: String,
         required: true,
     },
     size:{
