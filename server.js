@@ -15,6 +15,7 @@ const studentRoutes = require('./routes/studentRoutes');
 const staffRoutes= require('./routes/staffRoutes');
 const courseRoutes= require('./routes/course');
 const departmentRoutes= require('./routes/dapartmentRoutes');
+const partnersRoutes = require('./routes/partnersRoutes');
 
 
 
@@ -48,8 +49,10 @@ app.use(bodyParser.json())
 // 7. Set entry points for the REST routes created for the different Collections.
 app.use("/api/students", studentRoutes);
 app.use("/api/staff", staffRoutes);
-app.use("/api/course", courseRoutes);
-app.use("/api/department", departmentRoutes);
+app.use("/api/courses", courseRoutes);
+app.use("/api/departments", departmentRoutes);
+app.use("/api/partners",  partnersRoutes);
+
 
 
 // 8. Prepare for Production
