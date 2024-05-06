@@ -8,6 +8,10 @@ const cors = require("cors");
 // 2. Import Configurations
 const PORT = 3000;
 
+// Define MongoDB connection URI
+// server.js
+
+
 
 
 // 3. Import Routes:
