@@ -8,7 +8,16 @@ const cors = require("cors");
 // 2. Import Configurations
 const PORT = 3000;
 
+
+
 // 3. Import Routes:
+const studentRoutes = require('./routes/studentRoutes');
+const staffRoutes= require('./routes/staffRoutes');
+const courseRoutes= require('./routes/course');
+const departmentRoutes= require('./routes/dapartmentRoutes');
+const partnersRoutes = require('./routes/partnersRoutes');
+
+
 
 
 
@@ -38,9 +47,12 @@ app.use(bodyParser.json())
 
 
 // 7. Set entry points for the REST routes created for the different Collections.
-app.get("/", (req, res) => {
-  res.send("hello cse-js-3");
-});
+app.use("/api/students", studentRoutes);
+app.use("/api/staff", staffRoutes);
+app.use("/api/courses", courseRoutes);
+app.use("/api/departments", departmentRoutes);
+app.use("/api/partners",  partnersRoutes);
+
 
 
 // 8. Prepare for Production
