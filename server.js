@@ -55,7 +55,14 @@ app.use("/api/partners",  partnersRoutes);
 
 
 
+
 // 8. Prepare for Production
+if(process.env.NODE_ENV === 'production'){
+  app.use(express.static('views/dist'))
+  app.get('*', (req, res)=>{
+      res.sendFile(path.resolve(__dirname, 'views', 'dist', 'index.html'))
+  })
+}
 
 
 
