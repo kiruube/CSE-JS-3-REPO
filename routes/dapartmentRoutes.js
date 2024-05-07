@@ -3,7 +3,7 @@
     // 1.2. <model> from <models>
 
     const {Router} = require('express');
-    const Department = require('../models/Department')
+    const Department = require('./../models/department')
     
     // 2. Create a Router instance
     const router = Router()
