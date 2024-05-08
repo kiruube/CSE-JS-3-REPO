@@ -1,15 +1,15 @@
-<script setup>
+<script >
 // import { RouterLink, RouterView } from 'vue-router'
 // import HelloWorld from './components/HelloWorld.vue'
-import GeneralViewVue from "./views/GeneralView.vue";
+import GeneralView from "./views/GeneralView.vue";
 export default { 
-  components:{GeneralViewVue}
+  components:{GeneralView}
 }
 </script>
 
 <template>
 <div>
-  <GeneralViewVue></GeneralViewVue>
+  <GeneralView></GeneralView>
 
 </div>
   <!-- <header>
@@ -28,7 +28,7 @@ export default {
   <!-- <RouterView /> -->
 </template>
 
-<!-- <style scoped> -->
+<style scoped>
 header {
   line-height: 1.5;
   max-height: 100vh;
