@@ -1,9 +1,21 @@
+
 <template> 
-    <h1>This is a general page</h1>
+    <div>
+        <h1>This is a general page</h1>
+        <NavComponent></NavComponent>
+    </div>
 </template>
 
 <script>
-    export default {name:'GeneralView'}
+    import NavComponent from './../components/NavComponent.vue'
+
+    export default {
+        name:'GeneralView',
+
+        components: {
+            NavComponent
+        }
+    }
 
 </script>
 
