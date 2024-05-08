@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "install": "npm install && npm install --prefix views",
     "server": "nodemon server.js --ignore 'views/'",
     "vue": "npm run dev --prefix views",
     "dev": "concurrently \"npm run server\" \"npm run vue\"",
