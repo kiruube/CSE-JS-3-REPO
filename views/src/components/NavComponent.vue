@@ -13,7 +13,8 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Courses</a>
+          <RouterLink to="/courses" > <a class="nav-link" href="#">Courses</a> 
+          </RouterLink>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Students</a>
