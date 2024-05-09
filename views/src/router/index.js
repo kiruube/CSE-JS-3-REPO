@@ -1,5 +1,7 @@
 gimport { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import StudentsDetailView from '../views/students/StudentsDetailView.vue'
+import DepartmentsView from './../views/departments/DepartmentsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -10,12 +12,14 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
+      path: '/students/detail',
+      name: 'StudentsDetailView',
+      component: StudentsDetailView
+    },
+    {
+      path: '/departments',
+      name: 'DepartmentsView',
+      component: DepartmentsView
     }
   ]
 })
