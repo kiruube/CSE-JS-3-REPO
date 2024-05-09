@@ -2,6 +2,7 @@
 <template> 
     <div>
         <NavComponent></NavComponent>
+        <RouterView />
     </div>
 </template>
 

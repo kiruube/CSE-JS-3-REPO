@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import StudentsDetailView from '../views/students/StudentsDetailView.vue'
+import DepartmentsView from './../views/departments/DepartmentsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,16 +9,83 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: StudentsDetailView
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
-    }
+      path: '/students/register',
+      name: 'StudentsDetailView',
+      component: StudentsDetailView
+    },
+    {
+      path: '/students',
+      name: 'StudentsDetailView',
+      component: StudentsDetailView
+    },
+    {
+      path: '/students/detail',
+      name: 'StudentsDetailView',
+      component: StudentsDetailView
+    },
+    {
+      path: '/departments/register',
+      name: 'DepartmentsView',
+      component: DepartmentsView
+    },
+    {
+      path: '/departments',
+      name: 'DepartmentsView',
+      component: DepartmentsView
+    },
+    {
+      path: '/departments/detail',
+      name: 'DepartmentsView',
+      component: DepartmentsView
+    },
+    {
+      path: '/courses/register',
+      name: 'DepartmentsView',
+      component: DepartmentsView
+    },
+    {
+      path: '/courses',
+      name: 'DepartmentsView',
+      component: DepartmentsView
+    },
+    {
+      path: '/courses/detail',
+      name: 'DepartmentsView',
+      component: DepartmentsView
+    },
+    {
+      path: '/partners/register',
+      name: 'DepartmentsView',
+      component: DepartmentsView
+    },
+    {
+      path: '/partners',
+      name: 'DepartmentsView',
+      component: DepartmentsView
+    },
+    {
+      path: '/partners/detail',
+      name: 'DepartmentsView',
+      component: DepartmentsView
+    },
+    {
+      path: '/staff/register',
+      name: 'DepartmentsView',
+      component: DepartmentsView
+    },
+    {
+      path: '/staff',
+      name: 'DepartmentsView',
+      component: DepartmentsView
+    },
+    {
+      path: '/staff/detail',
+      name: 'DepartmentsView',
+      component: DepartmentsView
+    }  
   ]
 })
 
