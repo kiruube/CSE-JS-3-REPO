@@ -3,7 +3,7 @@
 <h1>This is DepartmentRegistrationView</h1>
 </div>
 
-<template>
+</template>
 
 
 <script>
