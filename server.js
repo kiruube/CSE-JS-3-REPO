@@ -6,11 +6,8 @@ const morgan = require('morgan');
 const cors = require("cors");
 
 // 2. Import Configurations
-const PORT = 3000;
 
-// Define MongoDB connection URI
-// server.js
-
+const { mongoUri, PORT } = require("./config");
 
 
 
