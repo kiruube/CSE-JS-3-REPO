@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 import StudentsDetailView from '../views/students/StudentsDetailView.vue'
 import DepartmentsView from './../views/departments/DepartmentsView.vue'
+import DepartmentsDetailView from './../views/departments/DepartmentsDetailView.vue'
+import DepartmentRegistrationView from './../views/departments/DepartmentRegistrationView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,8 +29,8 @@ const router = createRouter({
     },
     {
       path: '/departments/register',
-      name: 'DepartmentsView',
-      component: DepartmentsView
+      name: 'DepartmentsRegistrationView',
+      component: DepartmentRegistrationView
     },
     {
       path: '/departments',
@@ -38,8 +39,8 @@ const router = createRouter({
     },
     {
       path: '/departments/detail',
-      name: 'DepartmentsView',
-      component: DepartmentsView
+      name: 'DepartmentsDetailsView',
+      component: DepartmentsDetailView
     },
     {
       path: '/courses/register',

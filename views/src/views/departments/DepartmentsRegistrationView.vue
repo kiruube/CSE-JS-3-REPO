@@ -7,7 +7,7 @@
 
 
 <script>
-export default {name: "DepartmentView"}
+export default {name: "DepartmentRegistrationView"}
 </script>
 
 
